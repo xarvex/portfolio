@@ -4,7 +4,7 @@ before_script:
   - bun install
 pages:
   script:
-    - bun vp:build --outDir public
+    - bun run build
   artifacts:
     paths:
       - public

@@ -1,12 +1,17 @@
 {
-    "dependencies": {},
-    "devDependencies": {
-        "vitepress": "^1.1.3",
-        "vue": "^3.4.23"
-    },
+    "name": "xarvex-portfolio",
+    "type": "module",
+    "version": "0.0.1",
     "scripts": {
-        "vp:dev": "vitepress dev src",
-        "vp:build": "vitepress build src",
-        "vp:preview": "vitepress preview src"
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "astro": "^4.6.3",
+        "@astrojs/check": "^0.5.10",
+        "typescript": "^5.4.5"
     }
 }
