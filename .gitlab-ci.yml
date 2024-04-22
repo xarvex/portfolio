@@ -1,0 +1,15 @@
+image: node:lts
+before_script:
+  - npm install -g bun
+  - bun install
+pages:
+  script:
+    - bun vp:build
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules/
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
