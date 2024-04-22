@@ -3,11 +3,11 @@
     "type": "module",
     "version": "0.0.1",
     "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro check && astro build",
-        "preview": "astro preview",
-        "astro": "astro"
+        "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+        "start": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+        "build": "ASTRO_TELEMETRY_DISABLED=1 astro check && astro build",
+        "preview": "ASTRO_TELEMETRY_DISABLED=1 vastro preview",
+        "astro": "ASTRO_TELEMETRY_DISABLED=1 astro"
     },
     "dependencies": {
         "@astrojs/check": "^0.5.10",
