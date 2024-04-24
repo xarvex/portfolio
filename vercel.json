@@ -1,5 +1,15 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "cleanUrls": true,
+    "redirects": [
+        {
+            "source": "/(.*)(\\.action|\\.DS_Store|\\.env|\\.git|\\.php|\\.ssh|\\.sql|\\.vscode|\\.well-known|_all_dbs|_catalog|backup(.*)(\\.tar.*|\\.zip)|browserconfig\\.xml|META-INF|web\\.config)(.*)",
+            "destination": "https://youtu.be/dQw4w9WgXcQ"
+        },
+        {
+            "source": "/(admin|debug|ecp|Public|wordpress|wp)(.*)",
+            "destination": "https://youtu.be/dQw4w9WgXcQ"
+        }
+    ],
     "trailingSlash": false
 }
