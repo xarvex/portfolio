@@ -3,7 +3,7 @@
     "cleanUrls": true,
     "redirects": [
         {
-            "source": "/*/META-INF*",
+            "source": "/(.*)/META-INF(.*)",
             "destination": "https://youtu.be/dQw4w9WgXcQ"
         }
     ],
